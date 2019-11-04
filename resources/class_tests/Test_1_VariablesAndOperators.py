@@ -25,11 +25,11 @@ b -= d
 print("#4 : b = {b}".format(b=b))  # 0
 
 # 5: what are the values of the following e related values? Why?
-e = c % a  # 1
-e_test_1 = e > a  # F
-e_test_2 = e == d  # F
-e_test_3 = e - 1 < b ** 2  # F
-e_test_4 = e - 1 <= b ** 2  # T
+e = c % a
+e_test_1 = e > a
+e_test_2 = e == d
+e_test_3 = e - 1 < b ** 2
+e_test_4 = e - 1 <= b ** 2
 print("#5a: e = {e}\n"
       "#5b: e test 1 = {e1}\n"
       "#5c: e test 2 = {e2}\n"
@@ -41,4 +41,4 @@ f = "3"
 print("\n**BONUS**\n"
       "f = {f}\n"
       "f == 3 = {f1}\n"
-      "Explain the answer.".format(f=f, f1=(f == 3)))  # T
+      "Explain the answer.".format(f=f, f1=(f == 3)))

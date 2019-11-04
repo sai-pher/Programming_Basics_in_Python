@@ -93,8 +93,22 @@ while (guess_2 not in f) or (count < 3):
     else:
         print("HA-HA-HA! Try again!")
 
-    print(count, (guess_2 not in f), (count < 3), (guess_2 not in f) and (count < 3), guessed)
+    # Block of code to check the conditions during each loop iteration.
+    print("\n=============Sanity Check=============\n"
+          "number of words: {}\n"
+          "Guess 2 not in f: {}\n"
+          "count < 3: {}\n"
+          "While condition: {}\n"
+          "Guesses: {}"
+          .format(count, (guess_2 not in f), (count < 3), (guess_2 not in f) or (count < 3), guessed))
     if count < 3:
         guess_2 = input("\nWhat's your next word?: ")
     else:
         print("You have beaten the curse.")
+
+# BONUS: What will be the values of the sanity check print statement be when given the following words
+#           -> "yes"
+#           -> "dog"
+#           -> "large"
+#           -> "dog"
+#           -> "quick"
