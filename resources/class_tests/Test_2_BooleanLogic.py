@@ -49,6 +49,18 @@ c_v = red in to or to in _ or (_ in is_a and _ in c_test)
 print("c v: {}".format(c_v))
 
 # TODO: D questions using `is`
+d_1, d_2, d_3, d_4, d_5 = 1, "2", 2, True, 1.0
 
+d_i = d_1 is d_5
+print("d i: {}".format(d_i))
+
+d_ii = d_2 is d_3 or d_2 is not d_1
+print("d ii: {}".format(d_ii))
+
+d_iii = (2 * d_2) is not (2 * d_3) and (d_1 - d_4) is 0
+print("d iii: {}".format(d_iii))
+
+d_iv = d_4 is d_1 and d_1 is d_4 and d_5 is d_1
+print("d iv: {}".format(d_iv))
 
 # TODO: E questions using multiple combinations (up to 5 subs)
